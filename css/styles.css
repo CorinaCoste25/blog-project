@@ -55,12 +55,15 @@ h3 {
 /* -------------- navbar -------------- */
 
 .nav {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.9);
     padding: 0 2rem;
-    height: 0rem;
+    height: 4rem;
     min-height: 10vh;
     overflow: hidden;
     transition: height 1s ease-in-out;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 
 .nav-menu {
@@ -87,7 +90,7 @@ h3 {
 }
 
 .collapse {
-    height: 40rem;
+    height: 45rem;
 }
 
 .nav-items {
@@ -99,7 +102,7 @@ h3 {
 }
 
 .nav-link {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem;
     margin: 1.1rem;
     font-size: 1.1rem;
     position: relative;
@@ -200,8 +203,8 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    height: 60vh;
+    width: 70%;
+    height: 50vh;
     margin: 2rem;
     box-shadow: 10px 10px 8px #888888;
     transition: all 0.2s ease-in-out;
@@ -211,9 +214,8 @@ h3 {
     transform: scale(1.1);
 }
 
-.blog-content img {
-    width: 250px;
-    height: 220px;
+.owl-carousel .owl-item img {
+    height: 40%;
     overflow: hidden;
 }
 
@@ -223,6 +225,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 60%;;
 }
 
 .blog-title h3{
