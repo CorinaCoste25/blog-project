@@ -116,7 +116,7 @@
                     <div class="blog-content">
                         <img src="./assets/images/coffee-shop.jpg" alt="coffe-shop">
                         <div class="blog-title">
-                            <h3>Coffee and Love</h3>
+                            <h3>Coffee and love and Love for coffee</h3>
                             <span>Thoughts</span>
                             <button class="btn btn-blog">Read</button>     
                         </div>
@@ -155,28 +155,28 @@
             <div class="site-content">
                 <div class="posts">
                     <div class="post-content">
-                        <div class="post-image">
+                        <div class="post-image"  data-post-location="site-content">
                             <div class="image-container">
                                 <img src="./assets/images/coffee_poetry.jpg" alt="post1">
                             </div>
-                            <div class="post-info">
+                            <div class="post-info"  data-post-location="site-content">
                                 <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
                                 <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp; March 1, 2021</span>
                             </div>
                         </div>
-                        <div class="post-title">
+                        <div class="post-title" >
                             <a href="#">How my journey started</a>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, nulla libero a eum qui debitis praesentium perspiciatis blanditiis soluta ullam illum aliquid explicabo minus saepe maiores error beatae nam, modi rerum? Eaque assumenda impedit laudantium? Atque maiores et vero hic.</p>
                             <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
                         </div>
                     </div>
                     <hr>
-                    <div class="post-content">
+                    <div class="post-content"  data-post-location="site-content"> 
                         <div class="post-image">
                             <div class="image-container">
                                 <img src="./assets/images/books.jpg" alt="post2">
                             </div>
-                            <div class="post-info">
+                            <div class="post-info"  data-post-location="site-content">
                                 <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
                                 <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp; March 2, 2021</span>
                             </div>
@@ -206,7 +206,82 @@
                     </div>
                 </div>
                 <aside class="sidebar">
-                    <h1>Sidebar</h1>
+                    <div class="category">
+                        <h2 class="sidebar-title">Category</h2>
+                        <ul class="category-list">
+                            <li class="list-item">
+                                <a href="#">Thougths</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#">Stories</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#">Poetry</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popular-posts">
+                        <h2  class="sidebar-title">Popular posts</h2>
+                        <div class="post-content" >
+                            <div class="post-image" data-post-location="sidebar">
+                                <div class="image-container">
+                                    <img src="./assets/images/coffee-shop.jpg" alt="sidebar1">
+                                </div>
+                                <div class="post-info" data-post-location="sidebar">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp; March 1, 2021</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">Coffee and love and Love for coffee</a>
+                            </div>
+                        </div>
+                        <div class="post-content" >
+                            <div class="post-image" data-post-location="sidebar">
+                                <div class="image-container">
+                                    <img src="./assets/images/travel.jpg" alt="sidebar2">
+                                </div>
+                                <div class="post-info" data-post-location="sidebar">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp; March 1, 2021</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">Travel through time and space</a>
+                            </div>
+                        </div>
+                        <div class="post-content" >
+                            <div class="post-image" data-post-location="sidebar">
+                                <div class="image-container">
+                                    <img src="./assets/images/dandelion.jpg" alt="sidebar3">
+                                </div>
+                                <div class="post-info" data-post-location="sidebar">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp; March 1, 2021</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">Rise and shine</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsletter">
+                        <h2>Newsletter</h2>
+                        <div class="form-element">
+                            <input type="text" placeholder="Email" class="input-element">
+                            <button class="btn">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="popular-tags">
+                        <h2>Popular Tags</h2>
+                        <div class="tags">
+                            <span class="tag">thoughts</span>
+                            <span class="tag">poetry</span>
+                            <span class="tag">music</span>
+                            <span class="tag">love</span>
+                            <span class="tag">lyrics</span>
+                            <span class="tag">dance</span>
+                            <span class="tag">art</span>
+                            <span class="tag">words</span>
+                        </div>
+                    </div>
                 </aside>
             </div>
         </section>
@@ -217,7 +292,51 @@
 
     <!------x--------- Main Section ---------x------->
 
+    <!----------------- Footer ----------------------->
 
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ab commodi rerum sed doloremque ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ab commodi rerum sed doloremque ratione</p>
+            </div>
+            <div class="newsletter-footer">
+                <h2>Newsletter</h2>
+                <p>Stay updated with our latest posts!</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email" class="input-element">
+                    <span><i class="fas fa-chevron-right" aria-hidden="true"></i></span>
+                </div>
+            </div>
+            <div class="social-links">
+                <h2>Social</h2>
+                <div>
+                    <i class="fab fa-facebook"></i></i>
+                    <a href="#">Facebook</a> 
+                </div>
+                <div>
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <a href="#">Instagram</a>
+                </div>
+                <div>
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                    <a href="#">Twitter</a> 
+                </div>
+                <div>
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    <a href="#">Linkedin</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights flex-row">
+            <h4>Copyright &#169; 2020 All rights reserved | made by me</h4>
+        </div>
+        <div class="go-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+
+    <!-------x---------- Footer -----------x------------>
     
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>

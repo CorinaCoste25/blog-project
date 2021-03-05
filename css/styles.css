@@ -279,6 +279,10 @@ main .site-content {
 
 main .post-content {
     width: 100%;
+    /* margin: 2rem; */
+}
+
+div .posts {
     margin: 2rem;
 }
 
@@ -332,10 +336,167 @@ main .post-content {
     margin-left: 0;
 }
 
+/* --------------- Sidebar -------------------*/
+
+aside .sidebar {
+    width: 100%;
+    margin: 2rem;
+}
+
+.sidebar .sidebar-title {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.category-list {
+    padding-left: 1.5rem;
+}
+
+.category-list .list-item {
+    background: var(--yellowish);
+    padding: 0.4rem 1rem;
+    margin: 0.5rem 0;
+    border-radius: 3rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category-list .list-item a {
+    color: black;
+    font-weight: bold;
+}
+
+.popular-posts {
+    padding-top: 3rem;
+}
+
+aside .sidebar .popular-posts .post-content {
+    padding: 1rem 0;
+}
+
+.popular-posts .post-content .post-title a {
+    font-size: 1.1rem;
+}
+
+.newsletter {
+    padding-top: 3rem;
+}
+
+.form-element .input-element {
+    width: 60%;
+    height: 2.2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+}
+
+.newsletter .form-element .btn {
+    width: 60%;
+    border-radius: 0;
+    padding: 0.7rem 1.5rem;
+    margin: 0.2rem 1rem;
+}
+
+.popular-tags {
+    padding-top: 3rem;
+    width: 80%;
+}
+
+.popular-tags .tags {
+    padding-top: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.popular-tags .tags .tag {
+    background: var(--yellowish);
+    padding: 0.5rem 1rem;
+    margin: 0.2rem 0.4rem;
+    border-radius: 2rem;
+}
+
+/* ---------x------ Sidebar ----------x---------*/
+
 /* -------x----------- Site Content ----------x----------*/
 
 
 /* ------x--------- Main contennt --------------x----------*/
+
+/* ----------------- Footer ---------------------*/
+
+.footer {
+    height: 100%;
+    width: 100%;
+    background-color: var(--blueish);
+    color: white;
+    position: relative;
+    padding: 2rem;
+}
+
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.footer .container > div {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem 1rem;
+}
+
+.footer .about-us p,
+.footer .newsletter-footer p {
+    padding-top: 1rem;
+    text-align: justify;
+}
+
+.footer .about-us p{
+    width: 80%;
+}
+
+footer.footer .container .newsletter-footer .input-element {
+    margin-left: 0;
+}
+
+.footer .newsletter-footer .form-element span {
+    background:#50A7C2;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-links div {
+    padding-top: 1rem;
+}
+
+.footer .social-links a {
+    color: white;
+}
+
+.footer .social-links span {
+    color: white;
+}
+
+footer .flex-row {
+    justify-content: center;
+}
+
+footer .go-up {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    cursor: pointer;
+}
+
+/* --------x--------- Footer ------------x---------*/
 
 /*         viewport less or equal to 750px      */
 
