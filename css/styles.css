@@ -62,12 +62,13 @@ h3 {
 .nav {
     background: rgba(255, 255, 255, 0.9);
     padding: 0 2rem;
-    height: 4rem;
+    height: 3rem;
     min-height: 10vh;
     overflow: hidden;
     transition: height 1s ease-in-out;
     width: 100%;
     position: fixed;
+    top: 0;
     z-index: 1;
 }
 
@@ -95,19 +96,20 @@ h3 {
 }
 
 .collapse {
-    height: 45rem;
+    height: 70vh;
 }
 
-.nav-items {
-    display: flex;
-    flex-direction: row;
+.nav .nav-links-container .flex-row{
     align-items: center;
     justify-content: center;
-    margin: 0;
+}
+
+.nav .flex-row {
+    align-items: center;
 }
 
 .nav-link {
-    padding: 1.5rem;
+    padding: 1rem;
     margin: 1.1rem;
     font-size: 1.1rem;
     position: relative;
@@ -148,6 +150,7 @@ h3 {
 
 .site-title {
     background: url('../assets/images/typewriter.jpg');
+    margin-top: 104px;
     background-size: cover;
     height: 90vh;
     display: flex;
@@ -194,7 +197,7 @@ h3 {
     /* background: url(../assets/images/abstract.jpg); */
     background-color: white;
     /* background-repeat: no-repeat; */
-    height: 100vh;
+    height: 80vh;
     width: 100%;
 }
 
@@ -208,7 +211,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 80%;
     height: 50vh;
     margin: 2rem;
     box-shadow: 10px 10px 8px #888888;
@@ -315,7 +318,7 @@ div .posts {
     background: var(--yellowish);
     padding: 1rem;
     position: absolute;
-    bottom: 0%;
+    bottom: 0;
     left: 22vw;
     border-radius: 3rem;
 }
@@ -400,12 +403,13 @@ aside .sidebar .popular-posts .post-content {
 }
 
 .popular-tags {
-    padding-top: 3rem;
+    padding-top: 2rem;
     width: 80%;
 }
 
 .popular-tags .tags {
     padding-top: 0.7rem;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -419,10 +423,7 @@ aside .sidebar .popular-posts .post-content {
 }
 
 /* ---------x------ Sidebar ----------x---------*/
-
 /* -------x----------- Site Content ----------x----------*/
-
-
 /* ------x--------- Main contennt --------------x----------*/
 
 /* ----------------- Footer ---------------------*/
@@ -498,9 +499,19 @@ footer .go-up {
 
 /* --------x--------- Footer ------------x---------*/
 
-/*         viewport less or equal to 750px      */
+/*         viewport less or equal to 1300px      */
+@media only screen and (max-width: 1300px){
+    .site-content .posts .post-content .post-image .post-info {
+        left: 2rem;
+        bottom: 1rem;
+        border-radius: 0;
+    }
+}
+/*    x     viewport less or equal to 1300px    x  */
 
-@media only screen and (max-width: 950px) {
+
+/*         viewport less or equal to 960px      */
+@media only screen and (max-width: 960px) {
 
     .nav, .nav-menu, .nav-items {
         flex-direction: column;
@@ -515,6 +526,36 @@ footer .go-up {
         height: 170px;
         overflow: hidden;
     }
+
+    .footer .container {
+        grid-template-columns: 1fr;
+    }
+}
+/*     x   viewport less or equal to 960px       x     */
+
+
+/*         viewport less or equal to 750px            */
+@media only screen and (max-width: 750px) {
+    main .site-content {
+        grid-template-columns: 100%;
+    }
+}
+/*    x     viewport less or equal to 750px    x     */
+
+@media only screen and (max-width: 520px) {
+    footer .go-up {
+        top: 85%;
+    }
 }
 
-/*     x   viewport less or equal to 750px       x     */
+/*         viewport less or equal to 320px            */
+@media only screen and (max-width: 320px) {
+    footer .go-up {
+        top: 75%;
+    }
+}
+/*   x      viewport less or equal to 320px      x     */
+
+
+
+
