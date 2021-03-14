@@ -1,0 +1,102 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container {
+    padding: 5rem;
+    margin: 8rem 8rem 3rem 8rem;
+    border-top: 1px solid var(--blueish);
+    border-bottom: 1px solid  var(--blueish);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.image-container i {
+    padding-top: 1rem;
+}
+
+.image-container img {
+    width: 30%;
+    height: 40%;
+    object-fit: cover;
+}
+
+.profile {
+    padding: 0 5rem 5rem 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile h2,
+.about-me-text h2,
+.form-part h2  {
+    padding-bottom: 1.5rem;
+    align-self: flex-start;
+    padding-left: 5rem;
+}
+
+.profile table th {
+    font-style: italic;
+    font-size: 1.1rem;
+    padding: 0.6rem;
+    text-align: left;
+}
+
+.profile table tr:nth-child(2n+1) {
+    background: rgb(173, 216, 230);
+}
+
+.profile table tr:nth-child(2n) {
+    background: rgba(173, 216, 230, 0.2);
+}
+
+.profile table td {
+    font-size: 1rem;
+    padding: 0.6rem;
+    font-weight: bold;
+}
+
+.about-me-text {
+    padding: 0 5rem 5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-text p {
+    width: 80%;
+    padding-left: 2rem;
+    text-align: justify;
+    line-height: 1.5;
+    text-indent: 50px;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe-form label {
+    padding: 0.4rem;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.subscribe-form input {
+    width: 40%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+

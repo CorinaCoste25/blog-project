@@ -10,8 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="about-me.css">
 </head>
@@ -34,13 +32,13 @@
                         <a href="../../index.html">Home</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Stories</a>
+                        <a href="../stories/index.html">Stories</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Poetry</a>
+                        <a href="../poetry/index.html">Poetry</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Thoughts</a>
+                        <a href="../thoughts/index.html">Thoughts</a>
                     </li>
                     <li class="nav-link">
                         <a href="#">About Me</a>
@@ -65,8 +63,70 @@
     </nav>
 
     <!-------x-------- Navigation -------x--------->
-</head>
-<body>
+
+    <!---------------- Content -------------------->
+    <div class="container">
+        <div class="image-container">
+            <img src="../../assets/images/blank-profile.png" alt="me" class="my-photo">
+            <i>Surname Name</i>
+        </div>
+        <div class="profile">
+            <h2>Profile</h2>
+            <table>
+                <tr>
+                    <th>Age</th>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <th>Hobbies</th>
+                    <td>Art, Nature, Dancing, Fitness, Cokking, Anything that feeds my soul</td>
+                </tr>
+                <tr>
+                    <th>Favourite Animals</th>
+                    <td>Dogs, Cats, all of them but mice</td>
+                </tr>
+                <tr>
+                    <th>Places I would like to go</th>
+                    <td>Iceland, Machu Pichu, Bali, Athenes, Singapore, Space</td>
+                </tr>
+                <tr>
+                    <th>Biggest wishes</th>
+                    <td>Parachute jump, bungee jumping, bring peace to everyone</td>
+                </tr>
+                <tr>
+                    <th>Favourite books</th>
+                    <td>Too many, but for sure Maitrey, Homo Deus, Home Body and many many others</td>
+                </tr>
+            </table>
+        </div>
+        <div class="about-me-text">
+            <h2>Who Am I?</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus itaque, animi asperiores consequuntur corporis, vitae dolore alias esse fugiat distinctio odio quaerat cum accusantium error enim natus eos deleniti. Distinctio.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sed nostrum laudantium cumque impedit harum saepe quas veniam at, tenetur illo, soluta necessitatibus facere. Sapiente perferendis modi voluptas quis placeat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum vero quae tempore consectetur ex pariatur illum suscipit sed expedita impedit velit libero sint dolore maxime, consequuntur distinctio. Consectetur, laborum id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eos, distinctio sed architecto molestiae minus dolor error enim tempora iusto numquam eligendi quos atque nemo rerum voluptatem nesciunt ipsam eveniet.
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sed nostrum laudantium cumque impedit harum saepe quas veniam at, tenetur illo, soluta necessitatibus facere. Sapiente perferendis modi voluptas quis placeat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum vero quae tempore consectetur ex pariatur illum suscipit sed expedita impedit velit libero sint dolore maxime, consequuntur distinctio. Consectetur, laborum id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eos, distinctio sed architecto molestiae minus dolor error enim tempora iusto numquam eligendi quos atque nemo rerum voluptatem nesciunt ipsam eveniet.
+            </p>
+        </div>
+        <div class="form-part">
+            <h2>If you enjoyed what you read here you can subscribe for more like this</h2>
+            <form action="process.php" method="POST" class="subscribe-form">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Name" required id="name">
+                <label for="email">Email</label>
+                <input type="text" placeholder="Email"  required id="email">
+                <button type="submit" class="btn" id="btn-submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!--------s-------- Content -------------------->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/form-submit.js"></script>
     
 </body>
 </html>

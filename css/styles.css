@@ -14,10 +14,11 @@ body {
     --text-light: #686666da;
     --bg-color: #0f0f0f;
     --white: rgba(255, 255, 255, 0.8);
-    --blueish: #104f55;
+    --blue: #104f55;
+    --yellowish:  rgb(255, 255, 225);
 
     /* gradient colors */
-    --yellowish: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
+     --blueish: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%); 
 }
 
 
@@ -60,14 +61,14 @@ h3 {
 /* -------------- navbar -------------- */
 
 .nav {
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--yellowish);
     padding: 0 2rem;
     height: 3rem;
     min-height: 10vh;
     overflow: hidden;
     transition: height 1s ease-in-out;
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 1;
 }
@@ -96,7 +97,7 @@ h3 {
 }
 
 .collapse {
-    height: 70vh;
+    height: 100vh;
 }
 
 .nav .nav-links-container .flex-row{
@@ -109,14 +110,14 @@ h3 {
 }
 
 .nav-link {
-    padding: 1rem;
-    margin: 1.1rem;
+    padding: 0.7rem;
+    margin: 0.5rem;
     font-size: 1.1rem;
     position: relative;
 }
 
 .nav-link:hover {
-    background-color: var(--blueish);
+    background-color: var(--blue);
 }
 .nav-link:hover a {
     color: var(--white);
@@ -150,7 +151,7 @@ h3 {
 
 .site-title {
     background: url('../assets/images/typewriter.jpg');
-    margin-top: 104px;
+    margin-top: 10vh;
     background-size: cover;
     height: 90vh;
     display: flex;
@@ -172,11 +173,11 @@ h3 {
 
 .btn {
     margin: 1.8rem;
-    background: var(--yellowish);
+    background: var(--blueish);
     padding: 1.2rem 5rem;
     border-radius: 40px;
     border: none;
-    color: var(--blueish);
+    color: var(--blue);
     font-size: 1.4rem;
     opacity: 0.9;
     font-weight: bold;
@@ -185,7 +186,7 @@ h3 {
 }
 
 .btn:hover {
-    background: var(--blueish);
+    background: var(--blue);
     color: var(--white);
     transform: scale(1.1);
    
@@ -238,7 +239,7 @@ h3 {
 }
 
 .blog-title h3{
-    color: var(--blueish);
+    color: var(--blue);
     font-size: 1.5rem;
 }
 
@@ -255,7 +256,7 @@ h3 {
 
 .owl-nav .owl-prev .owl-nav-prev, 
 .owl-nav .owl-next .owl-nav-next {
-    color: var(--blueish);
+    color: var(--blue);
     background-color: transparent;
     font-size: 1.5rem;
 }
@@ -266,7 +267,7 @@ h3 {
 
 .owl-theme .owl-nav [class*="owl-"]:hover {
     color: white;
-    background-color: var(--blueish);
+    background-color: var(--blue);
     border: none;
 }
 
@@ -315,7 +316,7 @@ div .posts {
 }
 
 .post-info {
-    background: var(--yellowish);
+    background: var(--blueish);
     padding: 1rem;
     position: absolute;
     bottom: 0;
@@ -325,7 +326,7 @@ div .posts {
 
 .post-title a {
     font-size: 1.7rem;
-    color: var(--blueish);
+    color: var(--blue);
 }
 
 .post-title p {
@@ -356,7 +357,7 @@ aside .sidebar {
 }
 
 .category-list .list-item {
-    background: var(--yellowish);
+    background: var(--blueish);
     padding: 0.4rem 1rem;
     margin: 0.5rem 0;
     border-radius: 3rem;
@@ -416,7 +417,7 @@ aside .sidebar .popular-posts .post-content {
 }
 
 .popular-tags .tags .tag {
-    background: var(--yellowish);
+    background: var(--blueish);
     padding: 0.5rem 1rem;
     margin: 0.2rem 0.4rem;
     border-radius: 2rem;
@@ -431,7 +432,7 @@ aside .sidebar .popular-posts .post-content {
 .footer {
     height: 100%;
     width: 100%;
-    background-color: var(--blueish);
+    background-color: var(--blue);
     color: white;
     position: relative;
     padding: 2rem;
